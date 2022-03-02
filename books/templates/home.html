@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome to Django</title>
+    </head>
+<body>
+<h1>  BOOKS FORM </h1>
+<hr>
+
+<form action='/home/' method="post">
+    {% csrf_token %}
+    Name:- <input type="text" name="bname"><br><br>
+    Price:- <input type="number" name="bprice"><br><br>
+    Qty:- <input type="number" name="bqty"><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+<br>
+<a href="{% url 'show_all_table'%}">Show Bookings details</a>
+
+
+
+</body>
+</html>
