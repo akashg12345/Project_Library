@@ -128,6 +128,10 @@ def Restore_Soft_Deleted(request,id):
     return render(request,template_name = "Restore_Deleted.html",context={"books":BOOK})
 
 
+def greet():
+    print("hello")
+
+
 
 
 
